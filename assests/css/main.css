@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+header {
+    display: inline;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 900;
+}
+
+main {
+    padding: 5px;
+    margin: 1%;
+    overflow: auto;
+}
+
+ol .skill-bar {
+    color: white;
+    font-weight: bold;
+}
+
+article img {
+    width: 100%;
+}
+
+aside {
+    float: right;
+    width: 23%;
+    padding-left: 15px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside .foto-profile {
+    width: 150px;
+    display: block;
+    max-height: 150px;
+    margin: auto;
+}
+
+aside .icon-mini {
+    max-width: 20%;
+    min-width: 25px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #11052C;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    width: 70%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    padding: 5%;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar {
+    display: flex;
+    text-align: right;
+    min-height: 30px;
+}
+
+.skill li {
+    font-weight: 700;
+}
+
+.bar-js {
+    flex-basis: 75%;
+    background-color: #F43B86;
+}
+
+.bar-js:hover {
+    background-color: #9c2727;
+}
+
+.bar-node {
+    flex-basis: 90%;
+    background-color: rgb(134, 97, 51);
+}
+
+.bar-node:hover {
+    background-color: #554d35;
+}
+
+.bar-express {
+    flex-basis: 80%;
+    background-color: rgb(253, 159, 44);
+}
+
+.bar-express:hover {
+    background-color: #b9c266;
+}
+
+.bar-git {
+    flex-basis: 90%;
+    background-color: rgb(78, 61, 177);
+}
+
+.bar-git:hover {
+    background-color: #231f5f;
+}
+
+.bar-inggris {
+    flex-basis: 80%;
+    background-color: rgb(71, 23, 45);
+}
+
+.bar-inggris:hover {
+    background-color: #470d08;
+}
+
+.bar-js:hover,
+.bar-inggris:hover,
+.bar-node:hover,
+.bar-express:hover,
+.bar-git:hover {
+    font-family: 'Roboto';
+}
+
+.inline {
+    display: inline;
+}
+
+.profile-singkat {
+    text-align: center;
+}
+
+.tech {
+    padding: 5px;
+    text-align: left;
+    list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+/* dropdown */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+    display: block;
+    margin-left: 20%;
+}
+/* dropdown */
+
+/* responsive */
+@media screen and (max-width: 885px) {
+    .tech {
+        text-align: center;
+    }
+    .tech li {
+        margin-left: -20%;
+    }
+
+    .kontak li {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .tech li {
+        margin-left: -30%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .kontak li {
+        margin-left: -40%;
+    }
+
+    .foto-profile {
+        width: 130px;
+    }
+
+    .tech {
+        padding: 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .tech li {
+        margin-left: -70%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #content,
+    aside {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+        width: 25%;
+        margin-right: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact {
+        width: 40%;
+        margin-right: 50%;
+    }
+
+    .kontak li {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .kontak li {
+        margin-left: -40%;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    nav li {
+        margin-right: 5px;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .skill {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .skill li {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .contact {
+        width: 80%;
+        margin: auto;
+    }
+}
